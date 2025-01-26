@@ -1,15 +1,26 @@
-[tool.poetry]
-name = "ii_1"
+[project]
+name = "artificial-intelligence-laboratory-work-2"
 version = "0.1.0"
 description = ""
-authors = ["Artorias1469 <pupas5676@gmail.com>"]
+authors = [
+    {name = "Artorias1469",email = "pupas5676@gmail.com"}
+]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.9"
-black = "^24.10.0"
+requires-python = ">=3.9"
+dependencies = [
+]
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+pre-commit = "^4.1.0"
+mypy = "^1.14.1"
+pytest = "^8.3.4"
+flake8-pyproject = "^1.2.3"
+
